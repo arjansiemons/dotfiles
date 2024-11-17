@@ -23,3 +23,18 @@ alias k=kubectl
 complete -o default -F __start_kubectl k
 
 alias "ls=ls --color=auto"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# flux
+. <(flux completion bash)
+
+# Created by `pipx` on 2024-10-15 14:51:08
+export PATH="$PATH:/home/arjan/.local/bin"
+
+# Adapted from https://unix.stackexchange.com/a/113768/347104
+if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
+  # Adapted from https://unix.stackexchange.com/a/176885/347104
+  # Create session 'main' or attach to 'main' if already exists.
+  tmux new-session -A -s main
+fi
