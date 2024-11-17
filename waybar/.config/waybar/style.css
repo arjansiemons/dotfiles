@@ -36,8 +36,10 @@
 }
 
 #custom-music,
+#custom-cmus,
 #tray,
 #backlight,
+#bluetooth,
 #clock,
 #battery,
 #pulseaudio,
@@ -81,6 +83,11 @@
 }
 
 #custom-music {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#custom-cmus {
   color: @mauve;
   border-radius: 1rem;
 }
